@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+    /* border: 1px solid #000; */
+
+}
+.hero-image{
+    height: 100%;
+    width: 100%;
+}
+.des{
+    display: none;
+}
+
+
+.btn-hero{
+    background: orangered !important;
+}
+
+/* ABOUT SECTION */
+
+.about-image{
+    position: relative;
+   
+  
+}
+.image1{
+    height: 50% !important;
+}
+
+.about-sub-image{
+    height: 30%;
+    width: 30%;
+    position: absolute;
+    bottom: 90px;
+    left: 10px;
+}
+.box{
+    height: 30px;
+    width: 30px;
+    background: rgba(255, 68, 0, 0.171);
+    border-radius: 50%;
+}
+.about-footer{
+    background: rgba(255, 68, 0, 0.171);
+    border-left: 3px solid orangered;
+}
+
+
+/* Services Section */
+.home{
+    position: relative;
+}
+.home::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 5px;
+    background: orangered;
+    transition: .4s;
+}
+.home:is(:hover, :focus)::after { width: 100%; }
+.services-content h4:hover{
+    color: orangered;
+}
+
+
+/* Properties section */
+.properties-container{
+    background: #eee;
+    width: 100%;
+    /* box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5); */
+}
+.properties-image{
+    height: 55%;
+    width: 100%;
+}
+.properties-image img{
+    transition: .4s;
+    object-fit: cover;
+}
+
+.properties-image img:hover{
+
+    transform: scale(1.1);
+    object-fit: cover;
+    
+    inset: 0;
+}
+.price,.founder,.fa-quote-left{
+    color: orangered;
+}
+.hr{
+    height: 40px;
+    width: 1px;
+    background: #ddd;
+}
+
+
+.testimonial-image img{
+    border-radius: 100% !important;
+}
+.position-relative:hover{
+    transform: scale(1.1);
+   
+}
+
+
+
+@media (max-width:767px) {
+    nav{
+        position: fixed !important;
+        z-index: 1;
+        width: 100%;
+    }
+    .icons{
+        position: fixed;
+        display: flex;
+        justify-content: space-between;
+        bottom: -10px;
+        z-index: 1;
+        background: #eee;
+        width: 100%;
+        padding: 15px;
+    }
+    .search{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .des{
+        display: block;
+    }
+    .properties-image{
+        height: 64%;
+        width: 95%;
+    }
+   
+}
